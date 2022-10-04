@@ -13,14 +13,12 @@
     <meta name="keywords" content="음식형테스트, 음식형 테스트, 음식상 테스트, 피자형, 달걀형, 계란형, 사과형, 오이형">
     <meta name="author" content="PINA">
     <link rel="stylesheet" href="style.css">
-    <link rel="canonical" href="https://animalface.site" />
 	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="/favicon.ico" type="image/x-icon">
     <meta property="og:type" content="website" />
     <meta property="og:title" content="음식상 테스트" />
     <meta property="og:description" content="나의 얼굴과 닮은 음식을 찾아보세요!."
     />
-    <meta property="og:image" content="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2Fc0eq42%2FbtqCQpiFhFn%2F8KPaOP9q8PXpJFRL7if55K%2Fimg.jpg" />
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145482737-6"></script>
@@ -213,8 +211,8 @@
             console.log(prediction[0].className);
             var resultTitle, resultExplain, resultCeleb;
             if (document.getElementById("gender").checked) {
-                gtag('event', '동물상 테스트 수행', {
-                    'event_category': '동물상 테스트 수행',
+                gtag('event', '음식형 테스트 수행', {
+                    'event_category': '음식형 테스트 수행',
                     'event_label': '남자'
                 });
                 switch (prediction[0].className) {
@@ -249,8 +247,8 @@
                         gtag('event', '남자 결과 알수없음', {'event_category': '남자 결과'});
                 }
             } else {
-                gtag('event', '동물상 테스트 수행', {
-                    'event_category': '동물상 테스트 수행',
+                gtag('event', '음식형 테스트 수행', {
+                    'event_category': '음식형 테스트 수행',
                     'event_label': '여자'
                 });
                 switch (prediction[0].className) {
